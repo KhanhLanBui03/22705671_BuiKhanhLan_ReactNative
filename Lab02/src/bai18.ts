@@ -4,4 +4,6 @@ async function fetchUser(id: number): Promise<{ id: number; name: string }> {
         setTimeout(() => resolve({ id, name: `User${id}` }), 1000);
     });
 }
-fetchUser(2).then((res)=>console.log("Result:",res))
+fetchUser(2).then((res) => console.log("Result:", res))
+
+export default fetchUser;
